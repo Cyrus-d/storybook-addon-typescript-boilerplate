@@ -1,19 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import addons, { types } from '@storybook/addons';
 import { ADDON_ID } from './constants';
+import { Panel } from './components';
 
 const PANEL_ID = `${ADDON_ID}/new-panel`;
 
-const Panel = () => {
-  return <div>add on</div>;
-};
-
-Panel.displayName = 'Panel';
-
-addons.register(ADDON_ID, (_api) => {
+addons.register(ADDON_ID, (api) => {
   addons.add(PANEL_ID, {
     // eslint-disable-next-line react/display-name
-    render: () => <Panel />,
+    render: () => <Panel {...api} />,
     title: 'Addon panel',
     type: types.PANEL,
   });
