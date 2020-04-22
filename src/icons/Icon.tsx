@@ -1,22 +1,22 @@
 import * as React from 'react';
 
-const DirectionRTL = () => (
+const Icon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
-    viewBox="2 -4 19 22"
+    viewBox="2 -1 20 20"
     enableBackground="new 0 0 129 129"
     height={22}
     style={{
-      fill: 'currentColor'
+      fill: 'currentColor',
     }}
   >
     <path
       xmlns="http://www.w3.org/2000/svg"
-      d="M10 10v5h2V4h2v11h2V4h2V2h-8C7.79 2 6 3.79 6 6s1.79 4 4 4zm-2 7v-3l-4 4 4 4v-3h12v-2H8z"
+      d="M14.25 2.26l-.08-.04-.01.02C13.46 2.09 12.74 2 12 2 6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-4.75-3.31-8.72-7.75-9.74zM19.41 9h-7.99l2.71-4.7c2.4.66 4.35 2.42 5.28 4.7zM13.1 4.08L10.27 9l-1.15 2L6.4 6.3C7.84 4.88 9.82 4 12 4c.37 0 .74.03 1.1.08zM5.7 7.09L8.54 12l1.15 2H4.26C4.1 13.36 4 12.69 4 12c0-1.85.64-3.55 1.7-4.91zM4.59 15h7.98l-2.71 4.7c-2.4-.67-4.34-2.42-5.27-4.7zm6.31 4.91L14.89 13l2.72 4.7C16.16 19.12 14.18 20 12 20c-.38 0-.74-.04-1.1-.09zm7.4-3l-4-6.91h5.43c.17.64.27 1.31.27 2 0 1.85-.64 3.55-1.7 4.91z"
     />
     <path xmlns="http://www.w3.org/2000/svg" d="M0 0h24v24H0z" fill="none" />
   </svg>
 );
 
-export default DirectionRTL;
+export { Icon };
