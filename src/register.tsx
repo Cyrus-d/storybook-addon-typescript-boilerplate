@@ -1,13 +1,10 @@
 import React from 'react';
 import addons, { types } from '@storybook/addons';
-import { ADDON_ID } from './constants';
+import { ADDON_ID, TOOL_ID, PANEL_ID } from './constants';
 import { Tool } from './components/tool';
 import { DemoPanel } from './components/panel';
 import { AddonPanel } from '@storybook/components';
 // import { Preview } from './components';
-
-const PANEL_ID = `${ADDON_ID}/new-panel`;
-const TOOL_ID = `${ADDON_ID}/new-tool`;
 
 addons.register(ADDON_ID, (api) => {
   addons.add(TOOL_ID, {
