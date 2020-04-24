@@ -16,7 +16,7 @@ addons.register(ADDON_ID, (api) => {
   });
 
   addons.add(PANEL_ID, {
-    render: () => <DemoPanel api={api} />,
+    render: (options) => <DemoPanel api={api} {...options} />,
     title: 'Addon panel',
     type: types.PANEL,
   });
