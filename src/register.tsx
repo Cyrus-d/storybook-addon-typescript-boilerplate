@@ -3,6 +3,7 @@ import addons, { types } from '@storybook/addons';
 import { ADDON_ID } from './constants';
 import { Tool } from './components/tool';
 import { DemoPanel } from './components/panel';
+import { AddonPanel } from '@storybook/components';
 // import { Preview } from './components';
 
 const PANEL_ID = `${ADDON_ID}/new-panel`;
@@ -16,7 +17,11 @@ addons.register(ADDON_ID, (api) => {
   });
 
   addons.add(PANEL_ID, {
-    render: (options) => <DemoPanel api={api} {...options} />,
+    render: ({ active, key }) => (
+      <AddonPanel active={active} key={key}>
+        <DemoPanel api={api} />
+      </AddonPanel>
+    ),
     title: 'Addon panel',
     type: types.PANEL,
   });

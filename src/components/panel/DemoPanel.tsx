@@ -1,19 +1,12 @@
 import React, { SFC } from 'react';
 import { API } from '@storybook/api';
-import { RenderOptions } from '@storybook/addons';
-import { AddonPanel } from '@storybook/components';
 
-interface DemoPanelProps extends RenderOptions {
+interface DemoPanelProps {
   api: API;
 }
 
-const DemoPanel: SFC<DemoPanelProps> = (props) => {
-  const { active, key } = props;
-  return (
-    <AddonPanel active={active} key={key}>
-      <div>add on panel</div>
-    </AddonPanel>
-  );
+const DemoPanel: SFC<DemoPanelProps> = () => {
+  return <div>add on panel</div>;
 };
 
 DemoPanel.displayName = 'DemoPanel';
