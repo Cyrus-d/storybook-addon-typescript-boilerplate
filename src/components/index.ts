@@ -1,3 +1,3 @@
-export * from './panel';
-export * from './preview';
-export * from './tool';
+export * from './storybook-panel';
+export * from './storybook-preview';
+export * from './tool-bar';
