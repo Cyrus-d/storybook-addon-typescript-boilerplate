@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { SFC, useCallback } from 'react';
 import { Icon } from '../../icons/Icon';
 import { IconButton } from '@storybook/components';
 import { API } from '@storybook/api';
@@ -8,12 +8,10 @@ export interface ToolProps {
 }
 
 const Tool: SFC<ToolProps> = () => {
-  const hanle = () => {
-    console.log('click');
-  };
+  const handleClick = useCallback(() => {}, []);
 
   return (
-    <IconButton onClick={hanle} key="tool" title="tool icon">
+    <IconButton onClick={handleClick} key="tool" title="tool icon">
       <Icon />
     </IconButton>
   );
