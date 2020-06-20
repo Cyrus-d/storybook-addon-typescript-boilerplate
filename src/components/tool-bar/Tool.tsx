@@ -8,7 +8,9 @@ export interface ToolProps {
 }
 
 const Tool: SFC<ToolProps> = () => {
-  const handleClick = useCallback(() => {}, []);
+  const handleClick = useCallback(() => {
+    console.log('clicked');
+  }, []);
 
   return (
     <IconButton onClick={handleClick} key="tool" title="tool icon">
