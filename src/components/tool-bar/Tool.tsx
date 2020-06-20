@@ -1,6 +1,6 @@
 import React, { SFC, useCallback } from 'react';
 import { Icon } from '../../icons/Icon';
-import { IconButton } from '@storybook/components';
+import { IconButton, Separator } from '@storybook/components';
 import { API } from '@storybook/api';
 
 export interface ToolProps {
@@ -13,9 +13,13 @@ const Tool: SFC<ToolProps> = () => {
   }, []);
 
   return (
-    <IconButton onClick={handleClick} key="tool" title="tool icon">
-      <Icon />
-    </IconButton>
+    <>
+      <Separator />
+      <IconButton onClick={handleClick} key="tool" title="tool icon">
+        <Icon />
+      </IconButton>
+      <Separator />
+    </>
   );
 };
 
