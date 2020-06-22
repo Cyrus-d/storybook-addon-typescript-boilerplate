@@ -1,7 +1,7 @@
 import React from 'react';
 import addons, { types } from '@storybook/addons';
 import { ADDON_ID, TOOL_ID, PANEL_ID } from './constants';
-import { Tool } from './components/tool-bar';
+import { Tool } from './components/toolbar';
 import { DemoPanel } from './components/storybook-panel';
 import { AddonPanel } from '@storybook/components';
 // import { Preview } from './components';
