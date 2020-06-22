@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "storybook-addon-typescript-boilerplate",
   "author": "m.doaie <mdoaie@yahoo.co.uk>",
+  "main": "dist",
   "engines": {
     "node": ">= 12.13 <13"
   },
@@ -31,7 +32,6 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.1.0",
-    "tsutils": "^3.17.1",
     "typescript": "^3.9.5"
   },
   "scripts": {
