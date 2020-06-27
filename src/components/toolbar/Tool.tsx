@@ -1,16 +1,18 @@
 import React, { SFC, useCallback } from 'react';
 import { Icon } from '../../icons/Icon';
 import { IconButton, Separator } from '@storybook/components';
-import { API } from '@storybook/api';
+import { API, useStorybookApi } from '@storybook/api';
 
 export interface ToolProps {
   api?: API;
 }
 
 const Tool: SFC<ToolProps> = () => {
+  const api = useStorybookApi();
+
   const handleClick = useCallback(() => {
-    console.log('clicked');
-  }, []);
+    console.log((api.getCurrentStoryData() as any).parameters.fileName);
+  }, [api]);
 
   return (
     <>
