@@ -5,34 +5,34 @@
   "author": "m.doaie <mdoaie@yahoo.co.uk>",
   "main": "dist",
   "engines": {
-    "node": ">= 12.13 <13"
+    "node": ">= 12.13"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
-    "@babel/preset-typescript": "^7.12.1",
-    "@storybook/react": "^6.0.27",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.2",
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
-    "@typescript-eslint/parser": "^4.5.0",
-    "babel-loader": "^8.1.0",
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^6.14.0",
-    "eslint-plugin-jest": "^24.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@storybook/react": "^6.1.11",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.20",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
-    "jest": "^26.6.1",
-    "prettier": "^2.1.2",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.1",
-    "typescript": "^4.0.3"
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
   },
   "scripts": {
     "start:storybook": "start-storybook -p 6006 --ci",
@@ -46,10 +46,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@storybook/addon-knobs": "^6.0.27",
-    "@storybook/addons": "^6.0.27",
-    "@storybook/api": "^6.0.27",
-    "@storybook/components": "^6.0.27",
-    "react": "^16.13.1"
+    "@storybook/addon-knobs": "^6.1.11",
+    "@storybook/addons": "^6.1.11",
+    "@storybook/api": "^6.1.11",
+    "@storybook/components": "^6.1.11",
+    "react": "^17.0.1"
   }
 }
